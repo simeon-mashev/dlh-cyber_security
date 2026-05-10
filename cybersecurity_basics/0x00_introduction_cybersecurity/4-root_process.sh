@@ -1,2 +1,2 @@
 #!/bin/bash
-ps -u $1 -F | grep -vE '^\S+\s+\S+\s+\S+\s+\S+\s+0\s+0\s'
+ps aux | grep '^root' | grep -vE '^\S+\s+\S+\s+\S+\s+\S+\s+0\s+0\s'
