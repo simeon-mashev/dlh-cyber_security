@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#kill the infinite loop process
+pgrep -f '4-to_infi' | xargs kill
