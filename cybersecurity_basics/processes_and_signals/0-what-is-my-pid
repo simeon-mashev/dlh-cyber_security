@@ -1,0 +1,2 @@
+#!/bin/bash
+ps -e | tail -n5 | head -n1 | awk '{print $1}'
