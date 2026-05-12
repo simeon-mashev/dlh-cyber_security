@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #kill the infinite loop process
-pkill -f '^bash ./4-to_infinity_and_beyond'
+pgrep -f '4-to_infinity_and_beyond' | grep -v "^$PPID$" | xargs kill
