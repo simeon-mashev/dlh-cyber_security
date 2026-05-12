@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Does a ton of stuff
+echo "$$" > /tmp/myscript.pid
+trap 'echo "I hate the kill command"; rm /tmp/myscript.pid; exit' TERM
+trap 'echo "Y U no love me?!"' INT
+trap 'rm /tmp/myscript.pid; exit' QUIT
+while true; do
+	echo 'To infinity and beyond'
+	sleep 2
+done
