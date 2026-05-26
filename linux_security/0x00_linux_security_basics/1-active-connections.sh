@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo ss -tlpn -all
+sudo ss -antp
