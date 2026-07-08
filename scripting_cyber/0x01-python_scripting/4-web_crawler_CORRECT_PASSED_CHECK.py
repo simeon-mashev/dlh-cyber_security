@@ -18,9 +18,8 @@ def crawl_website(start_url, max_depth=2):
             domain = parsed.netloc
             if (domain == start_domain):
                 results.add(absolute_url)
-                if (max_depth - i > 1):
-                    newres = crawl_website(absolute_url, max_depth-(i+1))
-                    results.update(newres)
+            if (max_depth - i > 1):
+                crawl_website(absolute_url, max_depth-(i+1))
     return results
 
 
