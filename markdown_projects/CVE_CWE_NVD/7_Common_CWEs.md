@@ -1,0 +1,5 @@
+# Common CWEs
+
+1 common CWE is CWE-89 SQL Injection, the potential impact of which most often results in database compromise and data theft. Another example would be CWE-79 Cross-Site Scripting (XSS), which has the potential impact of session hijacking, credential theft, or malware distribution. 1 more example would be CWE-120 Buffer Overflow, which has the potential impact of Remote Code Execution or causing a system crash.
+
+If I was working on a software project, the priority of addressing these 3 examples would depend on the kind of software I am using. If the data is highly sensitive then CWE-89 SQL Injection is very important to prioritize, however if the data is not so sensitive or we are not using an SQL database then it is not very important. If client accounts carry out critical tasks like money transfers then CWE-79 XSS is very important. However if your website doesn't have client accounts it may be less important. In the case of CWE-120 it is almost always important to prevent Buffer Overflow vulnerabilities wherever possible, so all developers should be aware of this weakness.
