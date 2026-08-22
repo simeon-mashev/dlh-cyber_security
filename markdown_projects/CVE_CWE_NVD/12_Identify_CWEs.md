@@ -2,7 +2,7 @@
 
 Code snippet:
 
-```
+```python
 import sqlite3 
 def get_user(username): 
     conn = sqlite3.connect('users.db') 
@@ -18,7 +18,7 @@ In the code snippet there is a textbook case of CWE-89 SQL Injection type of vul
 
 Mitigation:
 
-```
+```python
 import re
 import sqlite3
 def get_user(username):
