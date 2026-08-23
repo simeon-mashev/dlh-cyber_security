@@ -51,7 +51,7 @@ Storing encryption keys alongside encrypted data is a severe security flaw. If t
 **Notes:**
 - Likelihood: 1 = Very unlikely, 5 = Almost certain.
 - Impact: 1 = Negligible, 5 = Severe/catastrophic.
-- Risk levels: 1-5 Low, 6-11 Medium, 12-16 High, 17-25 Critical.
+- Risk levels: 1-5 Low, 6-10 Medium, 12-16 High, 20-25 Critical.
 
 ---
 
