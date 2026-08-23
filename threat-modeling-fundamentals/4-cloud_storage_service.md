@@ -45,13 +45,13 @@ Storing encryption keys alongside encrypted data is a severe security flaw. If t
 | **Public link leakage exposes files** | 4 | 5 | 20 | **Critical** |
 | **SQL injection leads to database breach, exposing keys** | 3 | 5 | 15 | **High** |
 | **Stored XSS via malicious file upload** | 3 | 4 | 12 | **High** |
-| **IDOR vulnerability in file download endpoint** | 4 | 4 | 16 | **Critical** |
+| **IDOR vulnerability in file download endpoint** | 4 | 4 | 16 | **High** |
 | **Compromised admin account via credential stuffing** | 3 | 5 | 15 | **High** |
 
 **Notes:**
 - Likelihood: 1 = Very unlikely, 5 = Almost certain.
 - Impact: 1 = Negligible, 5 = Severe/catastrophic.
-- Risk levels: 1–5 Low, 6–10 Medium, 12–16 High, 20–25 Critical.
+- Risk levels: 1-5 Low, 6-11 Medium, 12-16 High, 17-25 Critical.
 
 ---
 
