@@ -41,136 +41,224 @@
 
 # Password Policy
 
-| Document Control | Details |
-|------------------|---------|
-| **Policy Name** | Password Policy |
-| **Version** | 1.0 |
-| **Effective Date** | [Date] |
-| **Last Reviewed** | [Date] |
-| **Review Cycle** | Annually |
-| **Policy Owner** | Chief Information Security Officer (CISO) |
-| **Approved By** | Chief Information Security Officer (CISO) |
-| **Classification** | Internal |
-| **Applies To** | All employees, contractors, vendors, and any individual with access to company systems |
+## Document Control
+
+| Field | Value |
+|-------|-------|
+| Policy ID | POL-PWD-001 |
+| Version | 1.0 |
+| Effective Date | 2026-08-25 |
+| Review Date | 2027-08-25 |
+| Policy Owner | Chief Information Security Officer (CISO) |
+| Approved By | Chief Information Security Officer (CISO) |
+| Classification | Internal |
 
 ---
 
 ## 1. Purpose
 
-The purpose of this policy is to establish minimum requirements for the creation, use, protection, and management of passwords for all company systems and applications. This policy aims to reduce the risk of unauthorized access resulting from weak or compromised passwords.
+This policy establishes minimum requirements for the creation, use, protection, and management of passwords across all company systems and applications. The objective is to reduce the risk of unauthorized access resulting from weak, compromised, or mismanaged passwords.
 
 ---
 
 ## 2. Scope
 
-This policy applies to all employees, contractors, consultants, temporary staff, and any other individual who has access to company systems, networks, applications, or data. It covers all user accounts, service accounts, administrative accounts, and any other authentication credentials used within the organization.
+### 2.1 Applicability
+
+This policy applies to:
+
+- [x] All employees
+- [x] Contractors and consultants
+- [x] Third-party vendors
+- [x] Any individual with access to company systems or data
+
+### 2.2 Systems/Assets Covered
+
+- All user accounts (employee, contractor, vendor)
+- All administrative and privileged accounts
+- All service accounts
+- All company-issued devices and systems
+- All cloud services and applications used by the company
+
+### 2.3 Exclusions
+
+- Personal devices not enrolled in the company's mobile device management (MDM) or endpoint management solution are not covered by this policy; however, users must not use company credentials on such devices unless explicitly approved.
 
 ---
 
-## 3. Policy Statement
+## 3. Policy Statements
 
-All users are required to create and maintain strong passwords that comply with the requirements defined in this policy. Passwords must be treated as confidential information and must not be shared, stored insecurely, or transmitted in plaintext.
+### 3.1 Password Creation and Complexity
 
----
+All users must create passwords that meet minimum security requirements.
 
-## 4. Password Requirements
+Requirements:
 
-### 4.1 Minimum Password Requirements
-
-All passwords must meet the following minimum requirements:
-
-- **Length:** Minimum of 12 characters; 16 or more is recommended.
-- **Complexity:** Must contain at least three of the following four character categories:
+- Minimum length of 12 characters; 16 or more recommended
+- Must contain at least three of the following four character categories:
   - Uppercase letters (A–Z)
   - Lowercase letters (a–z)
   - Numbers (0–9)
-  - Special characters (e.g., `! @ # $ % ^ & *`)
+  - Special characters (e.g., ! @ # $ % ^ & *)
+- Must not contain the user's name, username, employee ID, or email address
+- Must not be a single dictionary word or a commonly used password
 
-### 4.2 Password Restrictions
+### 3.2 Password Protection and Sharing
 
-Passwords must **not**:
+Passwords must be treated as confidential information.
 
-- Contain the user's name, username, employee ID, or email address.
-- Be a single dictionary word or common password (e.g., "password," "12345678").
-- Be a simple variation of a previous password (e.g., "Password1" to "Password2").
-- Be reused across multiple systems or services.
-- Be shared with any other person, including managers, IT staff, or family members.
+Requirements:
 
-### 4.3 Password Expiration
+- Passwords must not be shared with any person, including managers, IT staff, or family members
+- Passwords must not be written down or stored in unencrypted files
+- Passwords must not be transmitted via email or instant messaging
+- If a password is suspected to be compromised, it must be changed immediately and reported to the IT Security Team
 
-- User passwords must be changed every **90 days**.
-- Administrative and privileged account passwords must be changed every **60 days**.
-- Service account passwords must be changed every **180 days** or automatically rotated where supported.
+### 3.3 Password Expiration and History
 
-### 4.4 Password History
+Passwords must be changed regularly to limit exposure.
 
-Users may not reuse their last **10** passwords. The system will enforce password history where technically possible.
+Requirements:
 
-### 4.5 Multi-Factor Authentication
+- User passwords expire every 90 days
+- Administrative and privileged account passwords expire every 60 days
+- Service account passwords expire every 180 days or use automated rotation
+- Users may not reuse their last 10 passwords
+- Password history must be enforced where technically possible
 
-Multi-Factor Authentication (MFA) is **required** for:
+### 3.4 Multi-Factor Authentication
 
-- All remote access (VPN, cloud services).
-- All administrative and privileged accounts.
-- All systems containing sensitive or regulated data.
+Multi-Factor Authentication (MFA) is required for additional protection.
 
-### 4.6 Account Lockout
+Requirements:
 
-User accounts will be locked after **5 consecutive failed login attempts** within a 15-minute window. Lockout duration will be at least **15 minutes** or until manually reset by IT support.
+- MFA is mandatory for all remote access (VPN, cloud services)
+- MFA is mandatory for all administrative and privileged accounts
+- MFA is mandatory for all systems containing sensitive or regulated data
+- MFA must use a second factor such as a one-time code, biometric, or hardware token
+
+### 3.5 Account Lockout and Brute-Force Protection
+
+Accounts must be protected from automated password guessing.
+
+Requirements:
+
+- User accounts are locked after 5 consecutive failed login attempts within a 15-minute window
+- Lockout duration is at least 15 minutes or until manually reset by IT support
+- Administrative accounts must have stricter lockout and alerting (e.g., alert after 3 failed attempts)
+- Login attempts must be logged and monitored
 
 ---
 
-## 5. Roles and Responsibilities
+## 4. Roles and Responsibilities
 
 | Role | Responsibilities |
 |------|------------------|
-| **CISO** | Owns the policy; reviews and approves changes; ensures policy aligns with regulatory requirements. |
-| **IT Department** | Implements technical controls (password complexity, MFA, lockout); manages password resets; monitors compliance. |
-| **Managers** | Ensure team members understand and comply with the policy; address non-compliance. |
-| **Employees** | Create strong passwords per this policy; protect passwords; report suspected compromises immediately. |
-| **Security Team** | Audits compliance; investigates password-related incidents; recommends improvements. |
+| Executive Management | Approve policy, allocate resources, demonstrate commitment |
+| IT Security Team | Implement controls, monitor compliance, report violations |
+| Department Managers | Ensure team compliance, report issues, support training |
+| All Employees | Comply with policy, report incidents, complete training |
+| IT Support | Manage password resets, enforce technical controls, assist users |
+| CISO | Own policy, review annually, approve exceptions |
+
+---
+
+## 5. Compliance
+
+### 5.1 Monitoring
+
+Compliance is monitored through:
+
+- Automated password policy enforcement on systems (where possible)
+- Regular audits of account configurations
+- Review of password reset and lockout logs
+
+### 5.2 Reporting
+
+The IT Security Team will provide a quarterly compliance report to the CISO, including:
+
+- Number of accounts not meeting password requirements
+- Number of lockout events
+- Number of policy exceptions and their status
+- Results of any password audits
+
+### 5.3 Auditing
+
+An independent audit of password controls will be conducted annually, or more frequently if required by regulatory or business changes. Audit results will be documented and reviewed by management.
 
 ---
 
 ## 6. Enforcement
 
-Violations of this policy may result in disciplinary action, up to and including termination of employment. Non-compliance that leads to a security incident may also result in legal action or contract termination for third parties.
+### 6.1 Violations
+
+Violations of this policy may result in:
+
+- Verbal warning
+- Written warning
+- Suspension of access privileges
+- Disciplinary action up to and including termination
+- Legal action where applicable
+
+### 6.2 Reporting Violations
+
+Report suspected violations to: **IT Security Team via security@company.com or the incident reporting portal**
 
 ---
 
-## 7. Definitions
+## 7. Exceptions
+
+### 7.1 Exception Process
+
+Exceptions to this policy require:
+
+1. Written request to the CISO or Policy Owner
+2. Business justification
+3. Risk assessment
+4. Compensating controls (if applicable)
+5. Formal approval and documentation
+
+### 7.2 Exception Duration
+
+All exceptions must have a defined end date and be reviewed quarterly. Exceptions may be extended only by re-approval.
+
+---
+
+## 8. Definitions
 
 | Term | Definition |
 |------|------------|
-| **Password** | A secret string of characters used to authenticate a user to a system. |
-| **Multi-Factor Authentication (MFA)** | An authentication method requiring two or more verification factors (e.g., password + one-time code). |
-| **Privileged Account** | An account with elevated permissions (e.g., administrator, root, domain admin). |
-| **Service Account** | A non-human account used by applications or services to perform automated tasks. |
+| Password | A secret string of characters used to authenticate a user to a system |
+| Multi-Factor Authentication (MFA) | An authentication method requiring two or more verification factors |
+| Privileged Account | An account with elevated permissions (e.g., administrator, root) |
+| Service Account | A non-human account used by applications or services for automated tasks |
 
 ---
 
-## 8. Related Documents
+## 9. Related Documents
 
 - Acceptable Use Policy
 - Access Control Policy
 - Incident Response Policy
 - Multi-Factor Authentication Standard
+- NIST Special Publication 800-63B (Digital Identity Guidelines)
 
 ---
 
-## 9. Review and Revision History
+## 10. Revision History
 
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 0.1 | Last year | Unknown | Initial draft (incomplete) |
-| 1.0 | [Date] | CISO | Complete rewrite to meet organizational standards |
+| Version | Date | Author | Description |
+|---------|------|--------|-------------|
+| 1.0 | 2026-08-25 | CISO | Initial release |
 
 ---
 
-## 10. Approval
+## 11. Acknowledgment
 
-This policy is approved by the Chief Information Security Officer (CISO).
+By accessing company systems, all users acknowledge they have read, understood, and agree to comply with this policy.
 
-**Signature:** _________________________  
-**Name:** [CISO Name]  
-**Date:** [Date]
+For formal acknowledgment tracking, use the company’s policy acknowledgment system.
+
+---
+
+*End of Policy Document*
