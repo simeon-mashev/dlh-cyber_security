@@ -334,10 +334,3 @@ By accessing company systems, all users acknowledge they have read, understood, 
 
 [Specific, actionable recommendations to prevent recurrence.]
 
-## Approvals
-
-| Role | Name | Signature | Date |
-|------|------|-----------|------|
-| Incident Response Manager | | | |
-| Executive Sponsor | | | |
-| CISO | | | |
