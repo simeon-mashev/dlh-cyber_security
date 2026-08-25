@@ -187,7 +187,7 @@ Violations of this policy may result in:
 
 ### 6.2 Reporting Violations
 
-Report suspected violations to: **IT Security Team via security@techsecure.com or the incident reporting portal**
+Report suspected violations to: **IT Security Team via security(@)techsecure.com or the incident reporting portal**
 
 ---
 
