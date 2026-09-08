@@ -103,7 +103,7 @@ MedDefense Health Systems operates with a fundamentally weak security posture. T
 | GAP-009 | Server room locks/cameras | $10K | < 1 month |
 | GAP-001 (partial) | Implement server VLAN only | $30K | 3–6 months |
 
-**Total:** ~$70K, leaving $50K for contingency. Full network segmentation and medical IoT isolation deferred to next fiscal year (~$50K+).
+**Total:** \~$70K, leaving $50K for contingency. Full network segmentation and medical IoT isolation deferred to next fiscal year (~$50K+).
 
 **Quick wins (< 1 week):**
 - Enable MFA for remote/admin accounts.
